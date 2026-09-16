@@ -1,0 +1,13 @@
+sort(a.begin(),a.end());
+start1=a[0][0];
+end1=a[0][1];
+for(i=1;i<n;i++){
+start2=a[i][0];
+end2=a[i][1];
+if(end1>=start2){
+return true;
+}
+start1=start1;
+end1=max(end1,end2);
+}
+return false;
