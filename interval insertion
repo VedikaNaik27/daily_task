@@ -1,0 +1,27 @@
+vector <vector<int>>a;
+vector <vector<int>>b;
+vectpr <vector<int>>res;
+int i=0;
+intj=0;
+while(i<n and j<m){
+start1=a[i][0];
+start2=b[j][0];
+end1=a[i][1];
+end2=b[j][1];
+if(start1<=start2){
+if(end1>=start2){
+int s=max(start1,start2);
+int e=min(end1,end2);
+res.push_back({s,e});
+}}
+else{
+if(end2>=start1){
+int s=max(start1,start2);
+int e=min(end1,end2);
+res.push_back({s,e});
+}}
+if(end1<=end2)
+i++;
+else
+j++;
+}
