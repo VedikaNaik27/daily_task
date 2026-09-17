@@ -1,0 +1,6 @@
+slow=head;
+fasr=head
+while(fast!=null and fast->next!=null){
+slow=slow->next
+fast=fasr->next->next;
+}retuen slow;
