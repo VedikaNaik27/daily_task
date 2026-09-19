@@ -1,0 +1,8 @@
+best ending=a[0];
+ans=a[0];
+for(i=1;i<n;i++){
+int v1=bestending+a[i];
+int v2=a[i];
+bestending=max(v1,v2)
+ans=max(ans,bestending);
+}return ans
