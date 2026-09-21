@@ -1,0 +1,14 @@
+nodelete=a[0]
+onedelete=INT_MIN
+res=a[0]
+for(i=1;i<n;i++){
+prenodelete=nodelete
+preondelete=onedelete
+nodelete=max(nodelete+a[i],a[i])
+if(preondelete==INT_MIN)
+  v2=a[i]
+else
+  v2=preondelete+a[i]
+onedelete=max(v2,prenodelete)
+res=max(res,max(onedelete,nodelete))
+}return res
