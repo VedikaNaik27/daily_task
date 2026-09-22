@@ -1,0 +1,12 @@
+int maxabsolut sum{
+int max_end=min_end=0;
+int max_sum=INT_MAX;
+int min_sum=INT_MIN;
+for(i=0;i<n;i++){
+int v1=a[i];
+max_end=(v1>max_end+v1)?v1:max_end+v1;
+min_end=(v1>min_end+v1)?v1:min_end+v1;
+max_sum=(max_sum>max_end)?max_sum:max_end;
+min_sum=(min_sum>min_end)?min_sum:min_end;
+}return abs(max_sum)>abs(min_sum)?abs(max_sum):abs(min_sum);
+}
