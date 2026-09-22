@@ -1,0 +1,7 @@
+void prefixsum(int *num,int n,int prefix){
+int *prefix=malloc(n*sizeof(int));
+prefix[0]=num[0];
+for(int i=1;i<n;i++){
+prefix[i]=prefix[i-1]+num[i];
+}return prefix;
+}
