@@ -1,0 +1,14 @@
+int maxsubarray(int *num,int n){
+  int total=maxend=minend=0;
+int maxsum=INT_MIN;
+int minsum=INT_MAX;
+for(i=0;i<n;i++){
+total=num[i];
+maxend=num[i]>maxend+num[i]?num:maxend+num[i];
+minend=num[i]>minend+num[i]?num:minend+num[i];
+maxsum=maxsum>maxend?maxsum:maxend;
+minsum=minsum>minend?minsum:minend;
+}if(maxsum<0)
+  return maxsum;
+return maxsum>total-minsum?maxsum:total-minsum;
+}
