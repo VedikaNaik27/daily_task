@@ -1,0 +1,8 @@
+left=0;
+sum=28;
+for(i=1;i<n;i++){
+left+=a[i-1];
+right=sum-a[i]-left;
+if(left==right)
+return i;
+}return -1;
