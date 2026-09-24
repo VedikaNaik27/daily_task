@@ -1,0 +1,8 @@
+unordermap <int,int>f;
+f[0]=1;
+for(i=0;i<n;i++)
+sum+=a[i];
+int que=sum-k;
+int freq=f[que];
+res+=freq;
+}return res;
