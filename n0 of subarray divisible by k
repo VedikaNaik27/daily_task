@@ -1,0 +1,13 @@
+int n=a.size();
+int ans=0;
+int sum=0;
+unoredermap<int,int>f;
+f[0]=1;
+for(i=0;i<n;i++){
+sum+=a[i];
+int rem=sum%k;
+if(rem<0)
+rem=rem+k;
+res+=f[rem];
+f[rem]++;
+}return res;
