@@ -1,0 +1,11 @@
+string reverse(string a){
+  stack<char> st;
+  int i;
+  for(i=0;i<n;i++)
+    st.push(a[i]);
+  while(!st.empty()){
+    char c=st.top();
+    st.pop();
+    res.push_back(c);
+    }return res;
+  }
