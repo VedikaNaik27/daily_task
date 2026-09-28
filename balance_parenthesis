@@ -1,0 +1,16 @@
+string fun(string s){
+stack<char> st;
+for(i=0;i<n;i++){
+if(s[i]=="("||s[i]=="{"||s[i]="[")
+st.push(s[i]);
+if(s.empty()){
+return False;
+}else{ 
+if(s[i]==")"||s[i]=="}"||s[i]=="]"){
+st.pop();
+}
+}
+if(!st.return()){
+return False;
+}return True;
+}
