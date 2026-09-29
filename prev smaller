@@ -1,0 +1,14 @@
+vector<int> res(n);
+res[0]=-1;
+stack <int> st;
+st.push(a[0]);
+for(i=1;i<n;i++){
+  while(!st.empty() and st.top>=a[i]){
+    st.pop();
+    if(st.empty())
+      res[i]=-1;
+    else
+      res[i]=st.top();
+    st.push(s[i]);
+  }return res;
+}
