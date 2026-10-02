@@ -3,7 +3,7 @@ res[0]=-1;
 stack <int> st;
 st.push(a[0]);
 for(i=n;i<=0;i--){
-  while(!st.empty() and st.top<=a[i]){
+  while(!st.empty() and st.top()<=a[i]){
     st.pop();
     if(st.empty())
       res[i]=-1;
