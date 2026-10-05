@@ -1,0 +1,18 @@
+string s;
+unordered_map <char,int> have;
+for(i=0;i<n;i++)
+have[s[i]]++;
+unordered_map <char,int> need;
+need['b']=1;
+need['a']=1;
+need['l']=2;
+need['o']=1;
+need['n']=1;
+int res=INT_MAX;
+for(auto i:need){
+char c=i.first;
+int f.need=i.second;
+int f.have=have[c];
+int counr=f.have/f.need;
+res=min(res,count);
+}return res;
