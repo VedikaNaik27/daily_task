@@ -1,0 +1,19 @@
+string ransome,string magazine;
+unordered_map <char,int> have;
+unordered_map <char,int> need;
+for(i=0;i<ransome.size();i++)
+  need[ransome[i]]++;
+for(i=0;i<magazine.size();i++)
+  have[magazine[i]]++;
+return fun(have,need);
+}
+
+bool fun(unordered_map <char,int> have,unordered_map <char,int> need){
+  for(auto i:need){
+    char c=i.first;
+    int f.need=i.second;
+    int f.have=have[c];
+    if(f.have<f.need)
+      return false;
+    }return true;
+  }
